@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
 
 :root {
   /* Primary */
   --Red: hsl(0, 100%, 74%);
   --Green: hsl(154, 59%, 51%);
+  --GreenActive: hsla(154, 59%, 51%, 0.726);
 
   /* Accent */
   --Blue: hsl(248, 32%, 49%);
 
   /* Neutral */
-  --DarkBlue: hsl(249, 10%, 26%);
+  --DarkBlue: hsla(249, 10%, 26%);
+  --DarkBlueTransparent: hsla(249, 10%, 26%, 0.246);
   --GrayishBlue: hsl(246, 25%, 77%);
 }
 
@@ -19,4 +21,93 @@
 
 body {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Red);
+  background-image: url("./images/bg-intro-mobile.png");
+  padding: 85px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  width: 335px;
+  padding: 0 20px;
+}
+section h1 {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+section .description {
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 65px;
+  width: 98%;
+}
+section .try_free-btn {
+  background-color: var(--Blue);
+  color: white;
+  padding: 15px 48px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-weight: 200;
+  box-shadow: 0 6px 0px var(--DarkBlueTransparent);
+}
+section .try_free-btn span {
+  font-weight: 700;
+}
+section form {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 0px var(--DarkBlueTransparent);
+}
+section form input {
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--DarkBlueTransparent);
+  margin-bottom: 15px;
+  width: calc(100% - 40px);
+  outline: none;
+  font-weight: 700;
+  color: var(--DarkBlue);
+}
+section form input:focus {
+  border-color: var(--Blue);
+}
+section form button {
+  background-color: var(--Green);
+  border: none;
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 0 hsl(154, 54%, 43%);
+  cursor: pointer;
+}
+section form button:hover {
+  background-color: var(--GreenActive);
+  box-shadow: 0 3px 0 hsla(154, 54%, 43%, 0.726);
+}
+section form p {
+  padding: 0 30px;
+  color: rgb(184, 181, 181);
+  text-align: center;
+  font-size: 11px;
+}
+section form p span {
+  color: var(--Red);
+  font-weight: 700;
+  cursor: pointer;
+}
+section form p span:hover {
+  text-decoration: underline;
 }
