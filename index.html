@@ -15,6 +15,7 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
 
     <link rel="stylesheet" href="app.css" />
+    <script defer src="./app.js"></script>
     <style>
       .attribution {
         font-size: 11px;
@@ -41,11 +42,11 @@
         <div class="try_free-btn">
           <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
-        <form>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
+        <form novalidate>
+          <input type="text" id="name" placeholder="First Name" />
+          <input type="text" id="last_name" placeholder="Last Name" />
+          <input type="email" id="email" placeholder="Email Address" />
+          <input type="password" id="password" placeholder="Password" />
           <button type="submit">Claim your free trial</button>
           <p>
             By clicking the button, you are agreeing to our

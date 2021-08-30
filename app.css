@@ -113,8 +113,28 @@ section form p span {
 section form p span:hover {
   text-decoration: underline;
 }
+/* Error message*/
+section form .error_input {
+  margin-bottom: 30px;
+  border: 1px solid var(--Red);
+}
+section form .error img {
+  position: absolute;
+  margin-top: -70px;
+  margin-left: 255px;
+}
+section form .error p {
+  color: var(--Red);
+  font-style: italic;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 110px;
+}
+section form .error .password_message {
+  margin-left: 15px;
+}
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   body {
     height: 100vh;
     background-image: url("./images/bg-intro-desktop.png");
@@ -142,11 +162,22 @@ section form p span:hover {
     margin: 0 20px 25px 0;
   }
   section form {
-   width: 480px;
-   padding: 40px 30px;
-   margin-right: 20px;
+    width: 480px;
+    padding: 40px 30px;
+    margin-right: 20px;
   }
   section form input {
     margin-bottom: 20px;
+  }
+  /* Error message */
+  section form .error img {
+    margin-left: 430px;
+  }
+  section form .error p {
+    margin-top: -28px;
+    margin-left: 290px;
+  }
+  section form .error .password_message {
+    margin-left: 198px;
   }
 }
